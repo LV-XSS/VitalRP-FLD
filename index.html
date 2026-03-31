@@ -1,0 +1,99 @@
+# Design System Specification: Law Enforcement Editorial
+
+## 1. Overview & Creative North Star
+The "Creative North Star" for this design system is **The Sovereign Vault**. 
+
+In designing for a Firearms Licensing Division, we must move beyond the "utilitarian government form" and toward an experience that feels authoritative, impenetrable, and prestigious. This system rejects the cluttered, line-heavy aesthetic of traditional bureaucracy. Instead, it adopts a **High-End Editorial** approachâ€”utilizing vast negative space, intentional asymmetry, and "tonal layering" to guide the user through complex legal processes with the ease of a luxury digital periodical.
+
+The goal is to evoke the feeling of a high-security physical vault: heavy, silent, and impeccably organized. We break the "template" look by layering semi-transparent surfaces and using high-contrast typography scales that command attention without shouting.
+
+---
+
+## 2. Colors
+Our palette is rooted in deep, atmospheric neutrals, punctuated by "Police Blue" and "Gold" to signify institutional authority.
+
+### Tonal Strategy
+- **Primary Foundation:** Use `surface` (#131313) for the main canvas. For high-security "inner sanctum" areas, transition to `surface_container_lowest` (#0E0E0E) to create visual "weight."
+- **Institutional Accents:** `primary_container` (#1B365D) is reserved for structural branding, while `secondary` (#E9C176) acts as our "Gold" standard for calls to action and critical highlights.
+
+### The "No-Line" Rule
+**Explicit Instruction:** Prohibit the use of 1px solid borders to section content. Traditional lines create visual noise that degrades the premium feel. 
+- Boundaries must be defined solely through background color shifts. 
+- Place a `surface_container_low` card atop a `surface` background to define a zone. 
+- Use the `Spacing Scale` (specifically `8` or `12`) to create "voids" that act as invisible separators.
+
+### The "Glass & Gradient" Rule
+To prevent the dark theme from feeling flat or "muddy," use **Signature Textures**:
+- **Hero Transitions:** Apply a subtle linear gradient from `primary_container` (#1B365D) to `surface` (#131313) at a 15-degree angle to create a sense of environmental lighting.
+- **Glassmorphism:** For floating modals or "Secure Verification" overlays, use `surface_variant` at 60% opacity with a `20px` backdrop blur. This creates a "frosted ballistic glass" effect that maintains context while focusing the user.
+
+---
+
+## 3. Typography
+The typography system balances the brutalist authority of **Public Sans** with the high-utility clarity of **Inter**.
+
+| Level | Token | Font | Size | Weight/Style |
+| :--- | :--- | :--- | :--- | :--- |
+| **Display** | `display-lg` | Public Sans | 3.5rem | Bold / Tight Kerning |
+| **Headline** | `headline-md` | Public Sans | 1.75rem | Semi-Bold |
+| **Title** | `title-lg` | Inter | 1.375rem | Medium |
+| **Body** | `body-md` | Inter | 0.875rem | Regular / 1.6 Line Height |
+| **Label** | `label-md` | Inter | 0.75rem | Bold / All-Caps (Letter-spacing: 0.05em) |
+
+**Editorial Intent:** Use `display-lg` for section numbers or high-level status (e.g., "01. APPLICATION"). The contrast between the oversized headers and the functional `body-md` creates an "Official Document" hierarchy that feels intentional and bespoke.
+
+---
+
+## 4. Elevation & Depth
+In this system, depth is a measure of "Security Clearance." The deeper the user goes into a process, the more "layered" the UI becomes.
+
+### The Layering Principle (Tonal Stacking)
+Instead of drop shadows, use the surface hierarchy:
+1.  **Level 0 (Background):** `surface_dim` (#131313)
+2.  **Level 1 (Sectioning):** `surface_container_low` (#1C1B1B)
+3.  **Level 2 (Active Cards):** `surface_container` (#201F1F)
+4.  **Level 3 (Floating Elements):** `surface_bright` (#393939)
+
+### Ambient Shadows
+Shadows are only permitted for floating action elements (e.g., a "Submit Application" FAB). 
+- **Shadow Specs:** Blur: `24px`, Opacity: `8%`, Color: `primary_fixed_dim` (#AEC7F7). This creates a "blue-tinted glow" rather than a grey smudge, mimicking a high-tech display.
+
+### The "Ghost Border" Fallback
+If a container requires a border for accessibility (e.g., an input field), use the `outline_variant` token at **15% opacity**. It should be felt, not seen.
+
+---
+
+## 5. Components
+
+### Buttons (High-Impact)
+- **Primary:** Background: `secondary` (#E9C176); Text: `on_secondary` (#412D00). Use `md` (0.375rem) roundedness.
+- **Secondary:** Background: `transparent`; Border: `outline_variant` (20% opacity); Text: `secondary`.
+- **States:** On hover, apply a `secondary_container` (#604403) soft glow behind the button.
+
+### Input Fields (The "Dossier" Style)
+- Fields should not be boxes. Use a "bottom-line-only" approach or a very subtle `surface_container_highest` background.
+- **Active State:** The bottom border transitions to `secondary` (Gold) with a `2px` height.
+- **Helper Text:** Use `label-sm` in `on_surface_variant` (#C4C6CF).
+
+### Cards & Lists (The "Vault" Grid)
+- **Strictly No Dividers.** To separate list items (e.g., "Firearm Inventory"), use a `2px` vertical gap and alternate backgrounds between `surface_container_low` and `surface_container_lowest`.
+- **Interaction:** On hover, a card should shift from `surface_container` to `surface_container_high` and move `2px` to the right, creating a "mechanical drawer" feel.
+
+### Critical Status Indicators
+- **Success:** `surface_container_high` background with a `secondary_fixed_dim` (Gold) left-accent bar.
+- **Error:** `error_container` (#93000A) background with `on_error_container` (#FFDAD6) text.
+
+---
+
+## 6. Do's and Don'ts
+
+### Do:
+- **Do** use `24` (6rem) or `20` (5rem) spacing between major sections to let the design breathe.
+- **Do** use `surface_tint` at low opacities (3-5%) as an overlay on images to pull them into the "Police Blue" brand world.
+- **Do** use asymmetry. For example, a right-aligned "Apply Now" button offset against a left-aligned display header.
+
+### Don't:
+- **Don't** use 100% white (#FFFFFF) for body text. Use `on_surface_variant` (#C4C6CF) to reduce eye strain in dark mode.
+- **Don't** use standard "drop shadows" with black or grey colors.
+- **Don't** use fully rounded (pill-shaped) buttons unless they are small action chips. Stick to `md` (0.375rem) for an authoritative, "squared-off" look.
+- **Don't** use "Alert Red" for anything other than a destructive action or a legal violation.
