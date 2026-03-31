@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Firearms Licensing Division | Official Portal</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "tertiary-fixed-dim": "#b9c7df",
+                        "secondary": "#f7bd48",
+                        "secondary-container": "#ba880f",
+                        "on-background": "#e5e2e1",
+                        "on-tertiary-fixed": "#0d1c2e",
+                        "inverse-surface": "#e5e2e1",
+                        "on-primary-fixed": "#00164e",
+                        "on-tertiary-fixed-variant": "#3a485b",
+                        "on-secondary-container": "#392700",
+                        "on-secondary": "#412d00",
+                        "on-error": "#690005",
+                        "on-tertiary": "#233144",
+                        "tertiary": "#b9c7df",
+                        "primary": "#b6c4ff",
+                        "primary-fixed": "#dce1ff",
+                        "tertiary-fixed": "#d5e3fc",
+                        "inverse-on-surface": "#313030",
+                        "outline": "#8f909d",
+                        "on-primary": "#05297a",
+                        "on-secondary-fixed-variant": "#5d4200",
+                        "secondary-fixed": "#ffdea6",
+                        "primary-container": "#1e3a8a",
+                        "error-container": "#93000a",
+                        "on-surface": "#e5e2e1",
+                        "primary-fixed-dim": "#b6c4ff",
+                        "surface-bright": "#393939",
+                        "tertiary-container": "#334154",
+                        "inverse-primary": "#4059aa",
+                        "surface-container-highest": "#353534",
+                        "on-primary-container": "#90a8ff",
+                        "on-error-container": "#ffdad6",
+                        "surface": "#131313",
+                        "background": "#131313",
+                        "on-primary-fixed-variant": "#264191",
+                        "surface-tint": "#b6c4ff",
+                        "error": "#ffb4ab",
+                        "on-secondary-fixed": "#271900",
+                        "on-surface-variant": "#c5c5d3",
+                        "surface-container-high": "#2a2a2a",
+                        "surface-container": "#201f1f",
+                        "surface-container-low": "#1c1b1b",
+                        "surface-container-lowest": "#0e0e0e",
+                        "surface-dim": "#131313",
+                        "on-tertiary-container": "#9eadc4",
+                        "surface-variant": "#353534",
+                        "outline-variant": "#444651",
+                        "secondary-fixed-dim": "#f7bd48"
+                    },
+                    fontFamily: {
+                        "headline": ["Inter"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #1e3a8a 0%, #264191 100%);
+        }
+        .glass-panel {
+            background: rgba(32, 31, 31, 0.8);
+            backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary selection:text-on-primary">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-8 h-16 bg-[#131313] dark:bg-[#131313] border-none">
+<div class="flex items-center gap-8">
+<span class="text-xl font-black text-[#E5E2E1] tracking-tighter uppercase font-headline">Firearms Licensing Division</span>
+<nav class="hidden md:flex gap-6 items-center">
+<a class="font-headline tracking-tight font-bold uppercase text-sm text-[#B6C4FF] border-b-2 border-[#B6C4FF] pb-1" href="#">Home</a>
+<a class="font-headline tracking-tight font-bold uppercase text-sm text-[#C5C5D3] hover:text-[#E5E2E1] transition-colors duration-200" href="#">About</a>
+<a class="font-headline tracking-tight font-bold uppercase text-sm text-[#C5C5D3] hover:text-[#E5E2E1] transition-colors duration-200" href="#">Apply</a>
+<a class="font-headline tracking-tight font-bold uppercase text-sm text-[#C5C5D3] hover:text-[#E5E2E1] transition-colors duration-200" href="#">Renew</a>
+<a class="font-headline tracking-tight font-bold uppercase text-sm text-[#C5C5D3] hover:text-[#E5E2E1] transition-colors duration-200" href="#">Laws</a>
+<a class="font-headline tracking-tight font-bold uppercase text-sm text-[#C5C5D3] hover:text-[#E5E2E1] transition-colors duration-200" href="#">Support</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<button class="p-2 text-[#C5C5D3] hover:bg-[#1C1B1B] transition-colors duration-200 rounded">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+<button class="p-2 text-[#C5C5D3] hover:bg-[#1C1B1B] transition-colors duration-200 rounded">
+<span class="material-symbols-outlined" data-icon="account_circle">account_circle</span>
+</button>
+</div>
+</header>
+<!-- Sidebar Layout Wrapper -->
+<div class="flex min-h-screen pt-16">
+<!-- SideNavBar -->
+<aside class="fixed left-0 top-16 h-[calc(100vh-64px)] w-64 bg-[#1C1B1B] dark:bg-[#1C1B1B] flex flex-col py-6 shadow-[40px_0_60px_-15px_rgba(182,196,255,0.06)] hidden lg:flex z-40">
+<div class="px-6 mb-8">
+<div class="flex items-center gap-3 mb-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined" data-icon="shield">shield</span>
+</div>
+<div>
+<p class="text-[#E5E2E1] font-bold text-sm">Officer Portal</p>
+<p class="text-xs text-on-surface-variant/70">Secure Session Active</p>
+</div>
+</div>
+<button class="w-full py-2 px-4 bg-secondary-container text-on-secondary-container font-bold text-xs uppercase tracking-widest rounded hover:bg-secondary transition-all active:scale-95">
+                    Start New Application
+                </button>
+</div>
+<nav class="flex-1 px-0 space-y-1">
+<a class="flex items-center gap-3 px-6 py-3 text-sm font-medium transition-all duration-150 ease-in-out text-[#C5C5D3] hover:bg-[#2A2A2A] hover:text-[#E5E2E1]" href="#">
+<span class="material-symbols-outlined" data-icon="assignment_ind">assignment_ind</span>
+<span>My Application Status</span>
+</a>
+<a class="flex items-center gap-3 px-6 py-3 text-sm font-medium transition-all duration-150 ease-in-out text-[#C5C5D3] hover:bg-[#2A2A2A] hover:text-[#E5E2E1]" href="#">
+<span class="material-symbols-outlined" data-icon="campaign">campaign</span>
+<span>Latest Announcements</span>
+</a>
+<a class="mt-auto flex items-center gap-3 px-6 py-3 text-sm font-medium transition-all duration-150 ease-in-out text-[#C5C5D3] hover:bg-[#2A2A2A] hover:text-[#E5E2E1]" href="#">
+<span class="material-symbols-outlined" data-icon="logout">logout</span>
+<span>Secure Logout</span>
+</a>
+</nav>
+</aside>
+<!-- Main Content Canvas -->
+<main class="flex-1 lg:ml-64 w-full">
+<!-- Announcement Banner -->
+<div class="bg-secondary-container/20 border-l-4 border-secondary px-8 py-3 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary" data-icon="warning">warning</span>
+<p class="text-sm font-medium text-secondary-fixed uppercase tracking-wider">New Licensing Laws Effective Immediately - April 2026</p>
+</div>
+<a class="text-xs font-bold text-secondary uppercase hover:underline" href="#">Read Directive</a>
+</div>
+<!-- Hero Section (Asymmetric Layout) -->
+<section class="relative min-h-[716px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-30 grayscale contrast-125" data-alt="Modern government facility interior with high ceilings and sleek architectural lines in cool cinematic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUUeg8sxYvYT5WS3rAl6zJ7Il1hP7ptXMcmpQ7giLeEQ1p0TguKrgMq1beVJIYlSHWKd9WBfonwqgOBH22nUtRmzMKnX6J_0KOweHoXMENTdZ4xRBmX_j-aDMJtbjrv-gIT35W10aGBfvuoOoipCH9t5MNnbgGLS2OXjJd4OozTECcYOilQHP70ISzxIa59NfYg7ejXP6rICdheANeoKgz2L-NkKL7XZTORn7Mvn6v5XlhMfY-ul3HB-8vmuME8e7CUt0xx97QW9I"/>
+<div class="absolute inset-0 bg-gradient-to-r from-background via-background/90 to-transparent"></div>
+</div>
+<div class="relative z-10 px-8 lg:px-16 grid grid-cols-1 lg:grid-cols-12 gap-12 w-full">
+<div class="lg:col-span-8">
+<span class="inline-block px-3 py-1 bg-primary/10 border border-primary/20 text-primary text-[10px] uppercase tracking-[0.2em] font-bold mb-6">Department of Public Safety</span>
+<h1 class="text-6xl lg:text-8xl font-black font-headline tracking-tighter text-on-surface mb-6 uppercase leading-[0.9]">
+                            Firearms <br/> <span class="text-primary">Licensing</span> Division
+                        </h1>
+<p class="text-xl text-on-surface-variant max-w-xl mb-10 leading-relaxed">
+                            Regulating Legal Firearm Ownership Across Los Santos. Ensuring public safety through meticulous background verification and compliance standards.
+                        </p>
+<div class="flex flex-wrap gap-4">
+<button class="hero-gradient px-8 py-4 text-on-primary font-bold uppercase tracking-widest text-sm rounded-lg hover:shadow-[0_0_30px_-5px_rgba(182,196,255,0.4)] transition-all active:scale-95">
+                                Apply for a License
+                            </button>
+<button class="px-8 py-4 border border-outline-variant/30 text-on-surface font-bold uppercase tracking-widest text-sm rounded-lg hover:bg-surface-container-high transition-all">
+                                View Requirements
+                            </button>
+</div>
+</div>
+</div>
+</section>
+<!-- About Summary (Editorial Asymmetry) -->
+<section class="py-24 px-8 lg:px-16 grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
+<div>
+<h2 class="text-3xl font-black font-headline uppercase tracking-tight text-on-surface mb-8">Upholding the <br/>Sovereign Standard</h2>
+<p class="text-on-surface-variant leading-loose mb-6">
+                        The Firearms Licensing Division (FLD) serves as the primary regulatory body for the acquisition, possession, and transfer of firearms within the jurisdiction of Los Santos. Our mandate is to balance constitutional rights with the imperative of public security.
+                    </p>
+<p class="text-on-surface-variant leading-loose">
+                        Utilizing state-of-the-art verification protocols and integrated databases, the FLD ensures that every licensed individual meets the highest criteria of legal and mental fitness.
+                    </p>
+</div>
+<div class="bg-surface-container-low p-8 rounded-xl border-l-4 border-primary shadow-2xl">
+<div class="grid grid-cols-2 gap-8">
+<div>
+<p class="text-4xl font-black text-primary mb-1">12K+</p>
+<p class="text-[10px] uppercase tracking-widest font-bold text-on-surface-variant">Active Licenses</p>
+</div>
+<div>
+<p class="text-4xl font-black text-secondary mb-1">24H</p>
+<p class="text-[10px] uppercase tracking-widest font-bold text-on-surface-variant">Response Time</p>
+</div>
+<div>
+<p class="text-4xl font-black text-on-surface mb-1">100%</p>
+<p class="text-[10px] uppercase tracking-widest font-bold text-on-surface-variant">Digital Filing</p>
+</div>
+<div>
+<p class="text-4xl font-black text-on-surface mb-1">LSPD</p>
+<p class="text-[10px] uppercase tracking-widest font-bold text-on-surface-variant">Direct Integration</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Key Services Grid (Bento Style) -->
+<section class="py-24 px-8 lg:px-16 bg-surface-container-lowest">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-16">
+<div>
+<p class="text-primary text-[10px] uppercase tracking-[0.3em] font-black mb-2">Service Directory</p>
+<h2 class="text-4xl font-black font-headline uppercase tracking-tight">Core Operations</h2>
+</div>
+<div class="h-[2px] flex-1 bg-outline-variant/10 hidden md:block mb-3 mx-8"></div>
+<p class="text-on-surface-variant text-sm max-w-xs">Access primary licensing portals and compliance documentation below.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+<!-- Service Card 1 -->
+<div class="md:col-span-2 bg-surface-container-low p-8 rounded-xl group hover:bg-surface-container-high transition-all duration-300">
+<div class="w-12 h-12 bg-primary/10 rounded flex items-center justify-center text-primary mb-24 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl" data-icon="edit_document">edit_document</span>
+</div>
+<h3 class="text-2xl font-bold mb-2">Apply for License</h3>
+<p class="text-on-surface-variant text-sm mb-6">Initial application for CCW and Standard Firearms Permits.</p>
+<a class="inline-flex items-center gap-2 text-primary text-xs font-bold uppercase tracking-widest" href="#">
+                            Begin Process <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+<!-- Service Card 2 -->
+<div class="bg-surface-container-low p-8 rounded-xl group hover:bg-surface-container-high transition-all duration-300">
+<div class="w-12 h-12 bg-secondary/10 rounded flex items-center justify-center text-secondary mb-12">
+<span class="material-symbols-outlined text-2xl" data-icon="history">history</span>
+</div>
+<h3 class="text-xl font-bold mb-2">Renew License</h3>
+<p class="text-on-surface-variant text-xs mb-4">Maintain legal compliance by renewing existing permits.</p>
+</div>
+<!-- Service Card 3 -->
+<div class="bg-surface-container-low p-8 rounded-xl group hover:bg-surface-container-high transition-all duration-300">
+<div class="w-12 h-12 bg-on-surface/5 rounded flex items-center justify-center text-on-surface mb-12">
+<span class="material-symbols-outlined text-2xl" data-icon="fact_check">fact_check</span>
+</div>
+<h3 class="text-xl font-bold mb-2">Background Checks</h3>
+<p class="text-on-surface-variant text-xs mb-4">Official screening for sales and transfers.</p>
+</div>
+<!-- Service Card 4 -->
+<div class="md:col-span-4 bg-surface-container-low p-8 rounded-xl flex flex-col md:flex-row items-center justify-between group hover:bg-surface-container-high transition-all duration-300">
+<div class="flex items-center gap-6">
+<div class="w-12 h-12 bg-error-container/20 rounded flex items-center justify-center text-error">
+<span class="material-symbols-outlined text-2xl" data-icon="policy">policy</span>
+</div>
+<div>
+<h3 class="text-xl font-bold">Compliance Inspections</h3>
+<p class="text-on-surface-variant text-sm">Schedule required storage and safety audits for high-capacity licenses.</p>
+</div>
+</div>
+<button class="mt-4 md:mt-0 px-6 py-2 border border-outline-variant/30 text-xs font-bold uppercase tracking-widest rounded hover:bg-primary hover:text-on-primary hover:border-primary transition-all">
+                            Schedule Now
+                        </button>
+</div>
+</div>
+</section>
+<!-- Call to Action -->
+<section class="py-32 px-8 flex flex-col items-center text-center">
+<div class="max-w-2xl">
+<h2 class="text-5xl font-black font-headline uppercase tracking-tighter mb-6">Ready to Ensure Compliance?</h2>
+<p class="text-on-surface-variant mb-12 text-lg">Our streamlined digital portal is open 24/7 for residents to initiate their certification journey.</p>
+<button class="bg-secondary-container text-on-secondary-container px-12 py-5 font-black uppercase tracking-[0.2em] text-sm rounded shadow-lg hover:bg-secondary hover:shadow-secondary/20 transition-all active:scale-95">
+                        Start Your Application
+                    </button>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full flex flex-col items-center gap-4 px-8 mt-auto bg-[#0E0E0E] dark:bg-[#0E0E0E] py-12 border-t border-[#444651]/15">
+<div class="flex flex-wrap justify-center gap-8 mb-8">
+<a class="font-headline text-[10px] uppercase tracking-widest text-[#C5C5D3] hover:text-[#B6C4FF] transition-colors" href="#">Los Santos HQ</a>
+<a class="font-headline text-[10px] uppercase tracking-widest text-[#C5C5D3] hover:text-[#B6C4FF] transition-colors" href="#">Privacy Policy</a>
+<a class="font-headline text-[10px] uppercase tracking-widest text-[#C5C5D3] hover:text-[#B6C4FF] transition-colors" href="#">Terms of Service</a>
+<a class="font-headline text-[10px] uppercase tracking-widest text-[#C5C5D3] hover:text-[#B6C4FF] transition-colors" href="#">Security Protocol</a>
+</div>
+<div class="flex items-center gap-4 opacity-50 mb-4">
+<div class="h-px w-12 bg-outline-variant"></div>
+<span class="material-symbols-outlined text-sm" data-icon="gavel">gavel</span>
+<div class="h-px w-12 bg-outline-variant"></div>
+</div>
+<p class="font-headline text-[10px] uppercase tracking-widest text-[#C5C5D3] text-center opacity-70">
+                    © 2026 Firearms Licensing Division. Official Government Use Only.
+                </p>
+</footer>
+</main>
+</div>
+</body></html>
